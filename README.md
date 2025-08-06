@@ -10,7 +10,9 @@ dim_marketing, dim_economics, dim_weather, dim_date.
 
 Grain: one marketing-campaign day per location.
 
-Use-case: analyze campaign performance
+Use-case: to analyze campaign performance.
 
 Dashboard: https://public.tableau.com/views/Marketing-Campaign-Performance-AnalyticsPublic/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
+
+![Dashboard](https://github.com/raman-sk/Marketing-Campaign-Performance-Analytics/blob/main/images/dash.png)
