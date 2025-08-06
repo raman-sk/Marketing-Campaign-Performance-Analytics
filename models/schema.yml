@@ -1,0 +1,27 @@
+
+version: 2
+
+sources:
+  - name: data
+    schema: data
+    tables:
+      - name: economics_data
+      - name: holidays_data
+      - name: marketing_campaign_data
+      - name: weather_data
+
+models:
+  - name: dim_economics
+    columns:
+      - name: location
+        data_tests:
+          - unique
+          - not_null
+                  
+  - name: dim_weather
+    description: "A description of my model."
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - date_value
+            - location
